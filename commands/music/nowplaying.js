@@ -19,7 +19,7 @@ module.exports = class NowPlayingCommand extends Command {
         !message.guild.musicData.nowPlaying) ||
       message.guild.triviaData.isTriviaRunning
     ) {
-      return message.say('There is no song playing right now!');
+      return message.say('Não há nenhuma musica sendo tocada');
     }
 
     const video = message.guild.musicData.nowPlaying;

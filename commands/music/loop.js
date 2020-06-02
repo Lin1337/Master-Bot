@@ -21,7 +21,7 @@ module.exports = class LoopCommand extends Command {
 
   run(message, { numOfTimesToLoop }) {
     if (!message.guild.musicData.isPlaying) {
-      return message.say('There is no song playing right now!');
+      return message.say('Não há nenhuma musica sendo tocada');
     } else if (
       message.guild.musicData.isPlaying &&
       message.guild.triviaData.isTriviaRunning
